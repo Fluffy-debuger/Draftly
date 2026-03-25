@@ -1,0 +1,30 @@
+
+# Env Var
+
+.env
+.env.local
+.env.development
+*.pem
+*.pub
+gitssh
+
+# Node
+
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python & Backend
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+env/
+.venv/
+.pyenv/
+pip-log.txt
+pip-delete-this-directory.txt
+

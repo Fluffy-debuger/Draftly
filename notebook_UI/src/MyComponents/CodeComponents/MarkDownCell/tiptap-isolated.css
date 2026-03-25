@@ -1,0 +1,31 @@
+.tiptap-wrapper {
+  all: unset;
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #1f2937; /* gray-800 */
+  margin: 0.25rem;
+  padding: 1rem;
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 0.5rem;
+  background: white;
+}
+
+.tiptap-wrapper h1 { font-size: 1.875rem; font-weight: bold; }
+.tiptap-wrapper h2 { font-size: 1.5rem; font-weight: bold; }
+.tiptap-wrapper h3 { font-size: 1.25rem; font-weight: bold; }
+
+.tiptap-wrapper ul { padding-left: 1.25rem; list-style-type: disc; }
+.tiptap-wrapper ol { padding-left: 1.25rem; list-style-type: decimal; }
+.tiptap-wrapper blockquote {
+  border-left: 4px solid #9ca3af;
+  padding-left: 1rem;
+  color: #4b5563;
+  font-style: italic;
+}
+
+/* NEW: give ProseMirror padding inside */
+.tiptap-wrapper .ProseMirror {
+  padding: 0.25rem;
+  min-height: 150px;
+  outline: none;
+}

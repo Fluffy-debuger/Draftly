@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic-settings
+docker
+requests
+python-multipart
+humanize
+pymongo
