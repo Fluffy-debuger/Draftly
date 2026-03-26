@@ -83,6 +83,8 @@ function CodeOutput({ output }) {
       );
     }
 
+    if (!item || typeof item !== 'object') return null;
+
     return null;
   };
 

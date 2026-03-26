@@ -1,0 +1,15 @@
+{
+  "cellID": "10881d11-8063-4a5b-8091-8039e396f17f",
+  "cell": "CodeCell",
+  "CellData": {
+    "Data": "# data stats summary\ndf.describe()",
+    "result": [
+      {
+        "type": "execute_result",
+        "data": {
+          "text/html": "<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>hours_studied</th>\n      <th>sleep_hours</th>\n      <th>score</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>count</th>\n      <td>7.000000</td>\n      <td>7.000000</td>\n      <td>7.000000</td>\n    </tr>\n    <tr>\n      <th>mean</th>\n      <td>4.142857</td>\n      <td>5.000000</td>\n      <td>69.285714</td>\n    </tr>\n    <tr>\n      <th>std</th>\n      <td>2.410295</td>\n      <td>1.527525</td>\n      <td>13.972763</td>\n    </tr>\n    <tr>\n      <th>min</th>\n      <td>1.000000</td>\n      <td>3.000000</td>\n      <td>50.000000</td>\n    </tr>\n    <tr>\n      <th>25%</th>\n      <td>2.500000</td>\n      <td>4.000000</td>\n      <td>60.000000</td>\n    </tr>\n    <tr>\n      <th>50%</th>\n      <td>4.000000</td>\n      <td>5.000000</td>\n      <td>70.000000</td>\n    </tr>\n    <tr>\n      <th>75%</th>\n      <td>5.500000</td>\n      <td>6.000000</td>\n      <td>77.500000</td>\n    </tr>\n    <tr>\n      <th>max</th>\n      <td>8.000000</td>\n      <td>7.000000</td>\n      <td>90.000000</td>\n    </tr>\n  </tbody>\n</table>\n</div>"
+        }
+      }
+    ]
+  }
+}

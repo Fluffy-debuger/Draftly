@@ -1,0 +1,15 @@
+{
+  "cellID": "f7be9365-63ab-4b94-910e-ac0f94dd9121",
+  "cell": "CodeCell",
+  "CellData": {
+    "Data": "import pandas as pd\n\ndf=pd.read_csv(\"./uploads/assets/score.csv\")\n\ndf",
+    "result": [
+      {
+        "type": "execute_result",
+        "data": {
+          "text/html": "<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>hours_studied</th>\n      <th>sleep_hours</th>\n      <th>score</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>1</td>\n      <td>7</td>\n      <td>50</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>2</td>\n      <td>6</td>\n      <td>55</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>3</td>\n      <td>6</td>\n      <td>65</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>4</td>\n      <td>5</td>\n      <td>70</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>5</td>\n      <td>5</td>\n      <td>75</td>\n    </tr>\n    <tr>\n      <th>5</th>\n      <td>6</td>\n      <td>3</td>\n      <td>80</td>\n    </tr>\n    <tr>\n      <th>6</th>\n      <td>8</td>\n      <td>3</td>\n      <td>90</td>\n    </tr>\n  </tbody>\n</table>\n</div>"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "cellID": "3712b544-2bb6-4511-b4cc-c8ff52a43ebd",
+  "cell": "CodeCell",
+  "CellData": {
+    "Data": "import torch\nimport torch.nn as nn\n\nX = torch.tensor(df[[\"hours_studied\", \"sleep_hours\"]].values, dtype=torch.float32)\ny = torch.tensor(df[\"score\"].values, dtype=torch.float32).view(-1, 1)\n\nmodel = nn.Linear(2, 1)\n\ncriterion = nn.MSELoss()\noptimizer = torch.optim.SGD(model.parameters(), lr=0.01)\n\n# training loop\nfor epoch in range(10):\n    # forward pass\n    pred = model(X)  \n    # cal diff b/w prediction and actual value\n    loss = criterion(pred, y)\n    # clear accumulated value\n    optimizer.zero_grad()\n    # backward pass\n    loss.backward()\n    # updating weights and bias ie model parameters\n    optimizer.step()\n    print(f\"Epoch : {epoch+1} || Loss :{loss}\")\n\nprint(\"training complete\")",
+    "result": [
+      {
+        "type": "stream",
+        "name": "stdout",
+        "text": "Epoch : 1 || Loss :4369.56298828125\nEpoch : 2 || Loss :131.27688598632812\nEpoch : 3 || Loss :46.16344451904297\nEpoch : 4 || Loss :35.51051712036133\nEpoch : 5 || Loss :28.433887481689453\nEpoch : 6 || Loss :23.14113426208496\nEpoch : 7 || Loss :19.171039581298828\nEpoch : 8 || Loss :16.19285774230957\nEpoch : 9 || Loss :13.958724975585938\nEpoch : 10 || Loss :12.282674789428711\ntraining complete\n"
+      }
+    ]
+  }
+}

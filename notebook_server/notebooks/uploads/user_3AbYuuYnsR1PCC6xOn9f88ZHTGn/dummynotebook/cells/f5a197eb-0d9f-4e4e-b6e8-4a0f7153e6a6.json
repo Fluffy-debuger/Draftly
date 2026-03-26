@@ -1,0 +1,74 @@
+{
+  "cellID": "f5a197eb-0d9f-4e4e-b6e8-4a0f7153e6a6",
+  "cell": "CodeCell",
+  "CellData": {
+    "Data": "!pip install torch\n!pip install pandas\n!pip install seaborn",
+    "result": [
+      {
+        "type": "stream",
+        "name": "stdout",
+        "text": "Requirement already satisfied: torch in /usr/local/lib/python3.10/site-packages (2.11.0)\r\nRequirement already satisfied: filelock in /usr/local/lib/python3.10/site-packages (from torch) (3.25.2)\r\nRequirement already satisfied: typing-extensions>=4.10.0 in /usr/local/lib/python3.10/site-packages (from torch) (4.15.0)\r\nRequirement already satisfied: setuptools<82 in /usr/local/lib/python3.10/site-packages (from torch) (79.0.1)\r\nRequirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.10/site-packages (from torch) (1.14.0)\r\nRequirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.10/site-packages (from torch) (3.4.2)\r\nRequirement already satisfied: jinja2 in /usr/local/lib/python3.10/site-packages (from torch) (3.1.6)\r\nRequirement already satisfied: fsspec>=0.8.5 in /usr/local/lib/python3.10/site-packages (from torch) (2026.2.0)\r\nRequirement already satisfied: cuda-toolkit==13.0.2 in /usr/local/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"->torch) (13.0.2)\r\nRequirement already satisfied: cuda-bindings<14,>=13.0.3 in /usr/local/lib/python3.10/site-packages (from torch) (13.2.0)\r\nRequirement already satisfied: nvidia-cudnn-cu13==9.19.0.56 in /usr/local/lib/python3.10/site-packages (from torch) (9.19.0.56)\r\nRequirement already satisfied: nvidia-cusparselt-cu13==0.8.0 in /usr/local/lib/python3.10/site-packages (from torch) (0.8.0)\r\nRequirement already satisfied: nvidia-nccl-cu13==2.28.9 in /usr/local/lib/python3.10/site-packages (from torch) (2.28.9)\r\nRequirement already satisfied: nvidia-nvshmem-cu13==3.4.5 in /usr/local/lib/python3.10/site-packages (from torch) (3.4.5)\r\nRequirement already satisfied: triton==3.6.0 in /usr/local/lib/python3.10/site-packages (from torch) (3.6.0)\r\nRequirement already satisfied: nvidia-nvtx==13.0.85.* in /usr/local/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"->torch) (13.0.85)\r\n"
+      },
+      {
+        "type": "stream",
+        "name": "stdout",
+        "text": "Requirement already satisfied: nvidia-cuda-cupti==13.0.85.* in /usr/local/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"->torch) (13.0.85)\r\nRequirement already satisfied: nvidia-cusolver==12.0.4.66.* in /usr/local/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"->torch) (12.0.4.66)\r\nRequirement already satisfied: nvidia-cufft==12.0.0.61.* in /usr/local/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"->torch) (12.0.0.61)\r\nRequirement already satisfied: nvidia-cuda-nvrtc==13.0.88.* in /usr/local/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"->torch) (13.0.88)\r\nRequirement already satisfied: nvidia-nvjitlink==13.0.88.* in /usr/local/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"->torch) (13.0.88)\r\nRequirement already satisfied: nvidia-curand==10.4.0.35.* in /usr/local/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"->torch) (10.4.0.35)\r\nRequirement already satisfied: nvidia-cusparse==12.6.3.3.* in /usr/local/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"->torch) (12.6.3.3)\r\nRequirement already satisfied: nvidia-cuda-runtime==13.0.96.* in /usr/local/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"->torch) (13.0.96)\r\nRequirement already satisfied: nvidia-cublas==13.1.0.3.* in /usr/local/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"->torch) (13.1.0.3)\r\nRequirement already satisfied: nvidia-cufile==1.15.1.6.* in /usr/local/lib/python3.10/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == \"Linux\"->torch) (1.15.1.6)\r\nRequirement already satisfied: cuda-pathfinder~=1.1 in /usr/local/lib/python3.10/site-packages (from cuda-bindings<14,>=13.0.3->torch) (1.5.0)\r\n"
+      },
+      {
+        "type": "stream",
+        "name": "stdout",
+        "text": "Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.10/site-packages (from sympy>=1.13.3->torch) (1.3.0)\r\nRequirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.10/site-packages (from jinja2->torch) (3.0.3)\r\n"
+      },
+      {
+        "type": "stream",
+        "name": "stdout",
+        "text": "\u001b[33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.\u001b[0m\u001b[33m\r\n\u001b[0m"
+      },
+      {
+        "type": "stream",
+        "name": "stdout",
+        "text": "Requirement already satisfied: pandas in /usr/local/lib/python3.10/site-packages (2.3.3)\r\n"
+      },
+      {
+        "type": "stream",
+        "name": "stdout",
+        "text": "Requirement already satisfied: numpy>=1.22.4 in /usr/local/lib/python3.10/site-packages (from pandas) (2.2.6)\r\nRequirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.10/site-packages (from pandas) (2.9.0.post0)\r\nRequirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.10/site-packages (from pandas) (2026.1.post1)\r\nRequirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.10/site-packages (from pandas) (2025.3)\r\nRequirement already satisfied: six>=1.5 in /usr/local/lib/python3.10/site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)\r\n"
+      },
+      {
+        "type": "stream",
+        "name": "stdout",
+        "text": "\u001b[33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.\u001b[0m\u001b[33m\r\n\u001b[0m"
+      },
+      {
+        "type": "stream",
+        "name": "stdout",
+        "text": "Collecting seaborn\r\n"
+      },
+      {
+        "type": "stream",
+        "name": "stdout",
+        "text": "  Downloading seaborn-0.13.2-py3-none-any.whl.metadata (5.4 kB)\r\nRequirement already satisfied: numpy!=1.24.0,>=1.20 in /usr/local/lib/python3.10/site-packages (from seaborn) (2.2.6)\r\nRequirement already satisfied: pandas>=1.2 in /usr/local/lib/python3.10/site-packages (from seaborn) (2.3.3)\r\nRequirement already satisfied: matplotlib!=3.6.1,>=3.4 in /usr/local/lib/python3.10/site-packages (from seaborn) (3.10.8)\r\nRequirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (1.3.2)\r\nRequirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (0.12.1)\r\nRequirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (4.61.1)\r\nRequirement already satisfied: kiwisolver>=1.3.1 in /usr/local/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (1.5.0)\r\nRequirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (26.0)\r\nRequirement already satisfied: pillow>=8 in /usr/local/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (12.1.1)\r\nRequirement already satisfied: pyparsing>=3 in /usr/local/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (3.3.2)\r\nRequirement already satisfied: python-dateutil>=2.7 in /usr/local/lib/python3.10/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (2.9.0.post0)\r\n"
+      },
+      {
+        "type": "stream",
+        "name": "stdout",
+        "text": "Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.10/site-packages (from pandas>=1.2->seaborn) (2026.1.post1)\r\nRequirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.10/site-packages (from pandas>=1.2->seaborn) (2025.3)\r\n"
+      },
+      {
+        "type": "stream",
+        "name": "stdout",
+        "text": "Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib!=3.6.1,>=3.4->seaborn) (1.17.0)\r\nDownloading seaborn-0.13.2-py3-none-any.whl (294 kB)\r\n"
+      },
+      {
+        "type": "stream",
+        "name": "stdout",
+        "text": "Installing collected packages: seaborn\r\n"
+      },
+      {
+        "type": "stream",
+        "name": "stdout",
+        "text": "Successfully installed seaborn-0.13.2\r\n\u001b[33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.\u001b[0m\u001b[33m\r\n\u001b[0m"
+      }
+    ]
+  }
+}

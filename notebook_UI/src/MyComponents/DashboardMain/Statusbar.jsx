@@ -1,6 +1,7 @@
 import React from 'react'
 import SystemStatusInfo from './containerStatusinfo'
 import ResourceIndicator from '../utlities/usagemonitor'
+import { LogsIcon, TerminalIcon } from 'lucide-react'
 
 function StatusBar() {
   return (
@@ -9,9 +10,10 @@ function StatusBar() {
         Python 3.11 | Docker Kernel
       </div>
       <div className="flex items-center gap-3">
-        <button>📄 Logs</button>
-        <button>💻 Terminal</button>
+        <button><LogsIcon/> Logs</button>
+        <button><TerminalIcon/> Terminal</button>
       </div>
+
     </footer>
   )
 }

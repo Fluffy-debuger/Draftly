@@ -1,0 +1,14 @@
+{
+  "cellID": "6a4ccf54-fcda-45ba-8736-fcc486582009",
+  "cell": "CodeCell",
+  "CellData": {
+    "Data": "new_data = torch.tensor([[5.0, 6.0]])\nprediction = model(new_data)\n\nprint(\"Predicted Score:\", prediction.item())",
+    "result": [
+      {
+        "type": "stream",
+        "name": "stdout",
+        "text": "Predicted Score: 83.09542083740234\n"
+      }
+    ]
+  }
+}

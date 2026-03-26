@@ -1,0 +1,16 @@
+{
+  "cellID": "127ce26a-9a8f-4a41-bd96-34873d56e2d6",
+  "cell": "CodeCell",
+  "CellData": {
+    "Data": "# total null value each col\ndf.isnull().sum()",
+    "result": [
+      {
+        "type": "execute_result",
+        "data": {
+          "text/plain": "hours_studied    0\nsleep_hours      0\nscore            0\ndtype: int64"
+        },
+        "metadata": {}
+      }
+    ]
+  }
+}
