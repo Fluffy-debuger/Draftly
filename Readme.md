@@ -107,10 +107,12 @@ We use the trained model to make predictions.
 Frontend:
 
 * React
-* Monaco Editor
+* React Flow
+* Shadcn
 * Tldraw
 * Tiptap
-* React Flow
+* TanStack
+* Monaco Editor
 * Clerk (Authentication and Authorization)
 
 Backend:
